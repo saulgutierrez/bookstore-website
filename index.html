@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Swipper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Script libreria Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Script index.js -->
+    <script src="index.js"></script>
+    <title>Book Store Website</title>
+</head>
+<body>
+    <!-- Seccion Inicio -->
+    <section class="inicio">
+        <header>
+            <div class="logo">
+                <a href="#">Bookstore</a>
+                <div class="buscar">
+                    <div class="icono">
+                        <ion-icon name="search"></ion-icon>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Buscar...">
+                    </div>
+                </div>
+                <div class="iconos">
+                    <a href="#"><ion-icon name="cart"></ion-icon></a>
+                    <a href="#"><ion-icon name="person"></ion-icon></a>
+                </div>
+            </div>
+        </header>
+        <ul class="nav">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">¿Que ofrecemos?</a></li>
+            <li><a href="#bestSeller">Mas vendidos</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+        </ul>
+        <div class="contenido">
+            <h2>Bookstore</h2>
+            <p>Tu destino para explorar el fascinante mundo de los libros</p>
+            <a href="#">Ver más</a>
+        </div>
+    </section>
+    <!-- Fin Seccion Inicio -->
+
+    <!-- Seccion Servicios -->
+    <section class="servicios" id="servicios">
+        <h2 class="titulo">¿Que ofrecemos para ti?</h2>
+        <div class="cards">
+            <div class="card">
+                <ion-icon name="book-outline"></ion-icon>
+                <h3>Amplia selección de libros</h3>
+            </div>
+            <div class="card">
+                <ion-icon name="send-outline"></ion-icon>
+                <h3>Envios a nivel nacional e internacional</h3>
+            </div>
+            <div class="card">
+                <ion-icon name="pricetags-outline"></ion-icon>
+                <h3>Promociones y descuentos</h3>
+            </div>
+            <div class="card">
+                <ion-icon name="call-outline"></ion-icon>
+                <h3>Atención al cliente 24/7</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fin Seccion Servicios -->
+
+    <!-- Seccion Mas Vendidos -->
+    <section class="bestSeller" id="bestSeller">
+        <h2 class="titulo">Libros más vendidos</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/1.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Padre Rico, Padre Pobre</h3>
+                        <p>Robert Kiyosaki</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/2.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Billy Summers</h3>
+                        <p>Stephen King</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/3.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Hábitos Atómicos</h3>
+                        <p>James Clear</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/4.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Trading en la zona</h3>
+                        <p>Mark Douglas</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/5.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>El Alquimista</h3>
+                        <p>Paulo Coelho</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/6.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>El Pricipito</h3>
+                        <p>Antoine de Saint-Exupéry</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="imgBox">
+                        <img src="libros/7.jpeg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h3>Harry Potter y el Prisionero de Azkaban</h3>
+                        <p>J.K. Rowling</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- Fin Seccion Mas Vendidos -->
+
+    <!-- Seccion Novedades -->
+
+    <!-- Fin Seccion Novedades -->
+
+    <!-- Footer -->
+
+    <!-- Fin footer -->
+
+    <!-- Script Libreria Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
