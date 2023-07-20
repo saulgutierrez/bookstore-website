@@ -466,8 +466,87 @@ footer .copyright p {
     }
 
     .servicios .cards .card {
-        width: 270px;
-        
+        width: 270px;   
+    }
+
+    .inicio header {
+        padding: 20px 60px;
+    }
+
+    .inicio header .buscar {
+        width: 200px;
+        padding: 4px;
+    }
+
+    .inicio header .buscar .inputBox {
+        width: 150px;
+        height: 25px;
+    }
+
+    .inicio header .logo .iconos a {
+        margin-right: 0px;
+        font-size: 1.2em;
+    }
+
+    .inicio header .logo .iconos a:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    .inicio header .logo .iconos ion-icon {
+        font-size: 1em;
+    }
+
+    .inicio .nav {
+        display: none;
+    }
+
+    .menuToggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10000;
+        width: 40px;
+        height: 40px;
+        margin: 14px 30px;
+        background: url('menu.png');
+        filter: invert(1);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inicio .nav {
+        transform: translateY(-150%);
+    }
+
+    .inicio .nav.active {
+        width: 100%;
+        height: calc(100% - 60%);
+        position: fixed;
+        top: 66px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: #e75a48;
+        transform: translateY(0%);
+    }
+
+    .inicio .nav.active li {
+        padding: 20px;
+    }
+
+    .inicio .nav.active li a {
+        font-size: 1.1em;
     }
 }
 
