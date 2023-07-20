@@ -96,7 +96,7 @@ body {
     color: #e75a48;
 }
 
-.inicio header .logo .iconos a{
+.inicio header .logo .iconos a {
     margin-left: 20px;
     font-size: 1.5em;
     color: #fff;
@@ -246,15 +246,314 @@ body {
     object-fit: cover;
 }
 
+.bestSeller .swiper .swiper-wrapper .swiper-slide .texto {
+    width: 200px;
+    padding: 10px;   
+}
+
+.bestSeller .swiper .swiper-wrapper .swiper-slide .texto h3,
+.bestSeller .swiper .swiper-wrapper .swiper-slide .texto p {
+    margin-bottom: 5px;
+}
+
+.bestSeller .swiper .swiper-wrapper .swiper-slide .texto ion-icon {
+    color: #e75a48;
+}
+
+.bestSeller .swiper .swiper-button-prev,
+.bestSeller .swiper .swiper-button-next {
+    margin-left: -9px;
+    color: #e75a48;
+}
+
 /* Seccion Novedades */
+.novedades {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+    text-align: center;
+}
 
+.novedades video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.novedades h2 {
+    color: #fff;
+    font-size: 4em;
+    text-align: center;
+}
+
+.novedades h2 span {
+    font-family: 'Elsie', cursive;
+    text-transform: lowercase;
+    font-weight: 900;
+}
+
+.novedades p {
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.novedades p span {
+    font-family: 'Elsie', cursive;
+    text-transform: lowercase;
+    font-weight: 900;
+}
+
+.novedades form {
+    margin-top: 50px;
+}
+
+.novedades form input[type="email"] {
+    border: 2px solid #e75a48;
+    outline: none;
+    width: 350px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.novedades form input[type="submit"] {
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #e75a48;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.novedades form input[type="submit"]:hover {
+    color: #000;
+    background: #fff;
+}
 /* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo a {
+    font-family: 'Elsie', cursive;
+    text-transform: lowercase;
+    font-weight: 900;
+    color: #e75a48;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+footer .enlaces ul {
+    display: flex;
+    list-style: none;
+}
+
+footer .enlaces ul li {
+    padding: 25px;
+}
+
+footer .enlaces ul li a {
+    text-decoration: none;
+    color: #e75a48;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+footer .enlaces ul li a:hover {
+    color: #fff;
+}
+
+footer .copyright::before {
+    content: '';
+    width: 70%;
+    height: 1px;
+    background: #ff7462;
+    position: absolute;
+    top: 180px;
+    left: 15%;
+    opacity: 0.5;
+}
+
+footer .copyright p {
+    margin-top: 40px;
+    color: #e75a48;
+    font-weight: 600;
+}
 /* Breakpoints */
 
 /* -- Pantallas Largas -- */
+@media only screen and (max-width: 1200px) {
+    .servicios .cards {
+        gap: 10px;
+    }
+
+    .servicios .cards .card {
+        width: 270px;
+    }
+
+    .bestSeller .swiper .swiper-button-prev {
+        margin-left: -12px;
+    }
+
+    .bestSeller .swiper .swiper-button-next {
+        margin-right: -12px;
+    }
+}
 
 /* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+    .servicios .cards .card {
+        width: 200px;
+    }
+
+    .bestSeller .swiper .swiper-wrapper .swiper-slide .imgBox {
+        width: 150px;
+        height: 200px;
+    }
+
+    .novedades h2 {
+        font-size: 2.5em;
+    }
+
+    .novedades p {
+        font-size: 1em;
+
+    }
+}
 
 /* -- Tablets -- */
+@media only screen and (max-width: 768px) {
+    .inicio .contenido h2 {
+        font-size: 5em;
+    }
 
+    .inicio .contenido p {
+        font-size: 1em;
+    }
+
+    .servicios .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .servicios .cards .card {
+        width: 270px;
+        
+    }
+}
+
+/* -- Celulares -- */
+@media only screen and (max-width: 600px) {
+    .inicio header {
+        padding: 20px 60px;
+    }
+
+    .inicio header .buscar {
+        width: 200px;
+        padding: 4px;
+    }
+
+    .inicio header .buscar .inputBox {
+        width: 150px;
+        height: 25px;
+    }
+
+    .inicio header .logo .iconos a {
+        margin-right: 0px;
+        font-size: 1.2em;
+    }
+
+    .inicio header .logo .iconos a:nth-child(2) {
+        margin-right: 30px;
+    }
+
+    .inicio header .logo .iconos ion-icon {
+        font-size: 1em;
+    }
+
+    .inicio .nav {
+        display: none;
+    }
+
+    .menuToggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10000;
+        width: 40px;
+        height: 40px;
+        margin: 14px 30px;
+        background: url('menu.png');
+        filter: invert(1);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url('close.png');
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inicio .nav {
+        transform: translateY(-150%);
+    }
+
+    .inicio .nav.active {
+        width: 100%;
+        height: calc(100% - 60%);
+        position: fixed;
+        top: 66px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background: #e75a48;
+        transform: translateY(0%);
+    }
+
+    .inicio .nav.active li {
+        padding: 20px;
+    }
+
+    .inicio .nav.active li a {
+        font-size: 1.1em;
+    }
+
+    .novedades form input[type="email"] {
+        margin-bottom: 10px;
+    }
+}

@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="estilos.css">
     <!-- Swipper.js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <!-- Script libreria Swipper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Script index.js -->
-    <script src="index.js"></script>
     <title>Book Store Website</title>
 </head>
 <body>
@@ -34,11 +30,12 @@
                 </div>
             </div>
         </header>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
         <ul class="nav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#servicios">¿Que ofrecemos?</a></li>
-            <li><a href="#bestSeller">Mas vendidos</a></li>
-            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#servicios" onclick="toggleMenu()">¿Qué ofrecemos?</a></li>
+            <li><a href="#bestSeller" onclick="toggleMenu()">Más vendidos</a></li>
+            <li><a href="#novedades" onclick="toggleMenu()">Novedades</a></li>
         </ul>
         <div class="contenido">
             <h2>Bookstore</h2>
@@ -50,7 +47,7 @@
 
     <!-- Seccion Servicios -->
     <section class="servicios" id="servicios">
-        <h2 class="titulo">¿Que ofrecemos para ti?</h2>
+        <h2 class="titulo">¿Qué ofrecemos para ti?</h2>
         <div class="cards">
             <div class="card">
                 <ion-icon name="book-outline"></ion-icon>
@@ -70,7 +67,6 @@
             </div>
         </div>
     </section>
-
     <!-- Fin Seccion Servicios -->
 
     <!-- Seccion Mas Vendidos -->
@@ -78,7 +74,6 @@
         <h2 class="titulo">Libros más vendidos</h2>
         <div class="swiper">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide">
                     <div class="imgBox">
                         <img src="libros/1.jpg" alt="">
@@ -193,15 +188,44 @@
     <!-- Fin Seccion Mas Vendidos -->
 
     <!-- Seccion Novedades -->
+    <section class="novedades" id="novedades" onmouseenter="video.play()" onmouseleave="video.pause()">
+        <h2>Próximamente en <span>Bookstore</span>...</h2>
+        <p>Tendremos para ti <span>clásicos de la literatura</span> en edición tapa dura</p>
+        <p>¿Quiéres ser el primero en adquirirlos? ¡Dejanos tu correo y te avisarémos!</p>
 
+        <form action="">
+            <input type="email" placeholder="ejemplo@mail.com">
+            <input type="submit" value="Registrar Correo">
+        </form>
+        <video src="video.mp4" loop muted id="video"></video>
+    </section>
     <!-- Fin Seccion Novedades -->
 
     <!-- Footer -->
-
+    <footer>
+        <div class="logo">
+            <a href="#">Bookstore</a>
+        </div>
+        <div class="enlaces">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 - Saúl Gutiérrez. Todos los derechos reservados</p>
+        </div>
+    </footer>
     <!-- Fin footer -->
 
     <!-- Script Libreria Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Script libreria Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Script index.js -->
+    <script src="index.js"></script>
 </body>
 </html>
