@@ -650,7 +650,7 @@ footer .copyright p {
 
     .bestSeller .swiper .swiper-button-prev,
     .bestSeller .swiper .swiper-button-next {
-        margin-left: 0px;
+        margin-left: -15px;
     }
 
     .novedades {
