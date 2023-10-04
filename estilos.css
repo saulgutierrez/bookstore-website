@@ -648,11 +648,6 @@ footer .copyright p {
         font-size: 1.1em;
     }
 
-    .bestSeller .swiper .swiper-button-prev,
-    .bestSeller .swiper .swiper-button-next {
-        margin-left: -35px;
-    }
-
     .novedades {
         padding-left: 30px;
         padding-right: 30px;
