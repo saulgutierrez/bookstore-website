@@ -557,7 +557,8 @@ footer .copyright p {
     }
 
     .inicio header .buscar {
-        width: 100px;
+        margin-left: 10px;
+        width: 150px;
         padding: 4px;
     }
 
