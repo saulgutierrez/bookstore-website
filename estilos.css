@@ -572,10 +572,16 @@ footer .copyright p {
     }
 
     .inicio header .logo .iconos a {
-        margin-right: 10px;
         font-size: 1.2em;
     }
 
+    .inicio header .logo .iconos a:nth-child(1) {
+        margin-right: 5px;
+    }
+
+    .inicio header .logo .iconos a:nth-child(2) {
+        margin-right: 5px;
+    }
     .inicio header .logo .iconos ion-icon {
         font-size: 1em;
     }
