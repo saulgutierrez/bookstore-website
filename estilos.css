@@ -557,13 +557,12 @@ footer .copyright p {
     }
 
     .inicio header .buscar {
-        width: 150px;
+        width: 100px;
         padding: 4px;
     }
 
     .inicio header .buscar .inputBox {
-        margin-left: 30px;
-        width: 80px;
+        width: 150px;
         height: 25px;
     }
 
