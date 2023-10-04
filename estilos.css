@@ -587,6 +587,10 @@ footer .copyright p {
         display: none;
     }
 
+    .inicio .contenido h2 {
+        font-size: 4.5em;
+    }
+
     .inicio .contenido p {
         font-size: 0.8em;
     }
