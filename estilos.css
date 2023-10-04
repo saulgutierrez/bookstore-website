@@ -557,12 +557,12 @@ footer .copyright p {
     }
 
     .inicio header .buscar {
-        width: 200px;
+        width: 150px;
         padding: 4px;
     }
 
     .inicio header .buscar .inputBox {
-        width: 150px;
+        width: 100px;
         height: 25px;
     }
 
@@ -635,4 +635,8 @@ footer .copyright p {
     .novedades form input[type="email"] {
         margin-bottom: 10px;
     }
+}
+
+@media only screen and (max-width: 400px) {
+
 }
