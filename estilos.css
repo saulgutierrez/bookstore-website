@@ -566,6 +566,10 @@ footer .copyright p {
         height: 25px;
     }
 
+    .inicio header .logo a {
+        font-size: 1.1em;
+    }
+
     .inicio header .logo .iconos a {
         margin-right: 0px;
         font-size: 1.2em;
@@ -581,6 +585,10 @@ footer .copyright p {
 
     .inicio .nav {
         display: none;
+    }
+
+    .inicio .contenido p {
+        font-size: 0.8em;
     }
 
     .menuToggle {
@@ -633,7 +641,16 @@ footer .copyright p {
     }
 
     .novedades form input[type="email"] {
+        width: 100%;
         margin-bottom: 10px;
+    }
+
+    footer .enlaces ul li{
+        padding: 10px;
+    }
+
+    footer .copyright p {
+        font-size: 0.7em;
     }
 }
 
