@@ -7,3 +7,5 @@ Technologies used:
 <li> Swipper.js </li>
 <li> Ionic Icons </li>
 <li> Google Fonts </li>
+
+![image](https://github.com/saulgutierrez/bookstore-website/assets/62368834/f2e3bba2-d25d-4a7a-8b6d-b67487125794)
